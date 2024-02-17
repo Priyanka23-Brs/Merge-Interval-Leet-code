@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Merge Interval | DSA</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <h2>Merge Interval</h2>
+  </head>
+  <body>
+       <main role="main" style="margin-bottom: 100px">
+        <h4>Find the Merge Intervals for the given array</h4>
+        <p >
+          The merge function sorts the intervals by their start time, initializes a result array next, and then iterates through the sorted intervals. If the end time of the current interval in next is greater than or equal to the start time of the next interval in the original array, it merges the two intervals by taking the maximum of their end times. Otherwise, it adds the next interval to the next array.
+
+The intervals are represented as pairs of numbers, where the first number is the start of the interval and the second number is the end of the interval.
+        </p>
+        <label for="intervalsInput">Enter intervals:</label>
+        <input type="text" id="intervalsInput" placeholder="(eg.,[[1,3],[2,6],[8,10],[15,18]])" required><br><br>
+        <button type="button" onclick="mergeIntervals()">Merge Intervals</button><br><br>
+
+    
+      <div id="output"></div>
+    </main>
+ 
+    <script src="assets/js/merge-interval.js" defer></script>
+    
+  </body>
+</html>
